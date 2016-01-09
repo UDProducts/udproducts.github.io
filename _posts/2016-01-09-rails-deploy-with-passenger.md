@@ -20,9 +20,7 @@ rails new deploy_with_passenger
 rails g controller home index
 ```
 change routes
-```
 root home#index
-```
 ### Setup rails app for deployment
 
 Add passenger gem to your gem file
