@@ -1,3 +1,9 @@
 .nav-top{
   background-color: #12CA10 !important;
 }
+
+#disqus_thread {
+	width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
