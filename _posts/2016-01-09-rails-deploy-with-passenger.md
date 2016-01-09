@@ -14,15 +14,15 @@ image:
 I have been using nginx and unicorn combination in the vps server for my rails production application, and recently when working in a new project i found out that passenger was running on it and i wanted to give it a try.
 
 So lets start from first. Create a  new rails application
-
+```
 rails new deploy_with_passenger
 
 rails g controller home index
-
+```
 change routes
-
+```
 root home#index
-
+```
 ### Setup rails app for deployment
 
 Add passenger gem to your gem file
