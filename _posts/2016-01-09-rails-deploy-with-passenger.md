@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sample post"
+title: "Rails with passenger and nginx"
 description: ""
 category: articles
 tags: 
@@ -22,6 +22,8 @@ rails g controller home index
 change routes
 
 root home#index
+
+### Setup rails app for deployment
 
 Add passenger gem to your gem file
 
@@ -48,6 +50,9 @@ and uncomment set scm, linked_files and linked_dirs lines.
 
 then configure deploy/production.rb
 
+### Setup production server
+
+
 
 Now Configure Fresh AWS server
 
@@ -64,3 +69,9 @@ sudo apt-get install nodejs
 
 
  
+#### Now deploy the app
+
+Using capistrano deploy your app
+
+cap production deploy
+
