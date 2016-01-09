@@ -160,3 +160,18 @@ Open up /etc/nginx/sites-enabled/default in your text editor and we will replace
 Using capistrano deploy your app
 
     cap production deploy
+
+
+	class Greeter
+	  def initialize(name)
+	    @name = name.capitalize
+	  end
+
+	  def salute
+	    puts "Hello #{@name}!"
+	  end
+	end
+
+	gem 'capistrano', '~> 3.4.0'
+	gem 'capistrano-rails'
+	gem 'capistrano-passenger'
