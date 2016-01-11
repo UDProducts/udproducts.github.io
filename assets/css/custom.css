@@ -1,9 +1,11 @@
-.nav-top{
-  background-color: #12CA10 !important;
-}
 
 #disqus_thread {
 	width: 65%;
-    margin-left: auto;
+    margin-left: 29%;
     margin-right: auto;
+}
+
+.footer-wrap {
+	bottom: 0;
+	position: absolute;
 }

@@ -1,0 +1,27 @@
+<div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+	  <img src="http://udproducts.in/images/logo.png" style="width:100px;">
+
+    <h1 class="brand-title">{% if page.title %}{% endif %}{{ site.title }}</h1>{{ end }}
+    
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="{{ '/' }}">Blog</a></li>
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="{{ '/articles' }}">Archive</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-buttons">
+      <a href="http://facebook.com/udproducts" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+      <a href="http://github.com/UDProducts" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+    </div>
+
+  </div>
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+</div>

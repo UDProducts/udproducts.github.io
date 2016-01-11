@@ -11,9 +11,7 @@ image:
 ---
 ### Intro
 
-I have been using nginx and unicorn combination in the vps server for my rails production application, and recently when working in a new project i found out that passenger was running on it and i wanted to give it a try.
-
-So lets start from first. Create a  new rails application
+I have been using nginx and unicorn combination in the vps server for my rails production application, and recently when working in a new project i found out that passenger was running on it and i wanted to give it a try. So lets start from first. Create a  new rails application
 
     rails new deploy_with_passenger
 	rails g controller home index
@@ -73,9 +71,7 @@ Now configure deploy/production.rb
 
 ### Setup production server
 
-Now configure fresh production server
-
-Installing dependencies for ruby
+Now configure fresh production server. Installing dependencies for ruby
 
     sudo apt-get update
     sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3 -dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
@@ -161,17 +157,3 @@ Using capistrano deploy your app
 
     cap production deploy
 
-
-	class Greeter
-	  def initialize(name)
-	    @name = name.capitalize
-	  end
-
-	  def salute
-	    puts "Hello #{@name}!"
-	  end
-	end
-
-	gem 'capistrano', '~> 3.4.0'
-	gem 'capistrano-rails'
-	gem 'capistrano-passenger'
