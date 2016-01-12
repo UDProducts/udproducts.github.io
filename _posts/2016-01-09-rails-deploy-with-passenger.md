@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rails with passenger and nginx"
+title: "Rails deployment with passenger and nginx"
 description: ""
 category: articles
 tags: 
@@ -9,7 +9,7 @@ image:
   comments: true
   share: true
 ---
-### Intro
+### Intro:
 
 I have been using nginx and unicorn combination in the vps server for my rails production application, and recently when working in a new project i found out that passenger was running on it and i wanted to give it a try. So lets start from first. Create a  new rails application
 
